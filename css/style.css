@@ -1,0 +1,269 @@
+*,
+* ::after,
+* ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+html {
+    font-family: 'montserratregular', Arial, sans-serif;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+/* body {
+    display: flex;
+    flex-direction:column;
+} */
+main {
+    flex-grow:1 ;
+}
+.header {
+    min-height:60px ;
+    display: flex;
+}
+.banner {
+    margin-top: 90px;
+}
+.section__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.header-menu {
+    min-height: 50px;
+    position:relative;
+    width: 1440px;
+    top: 0;
+    z-index:100 ;
+}
+.logo{
+    margin-right: 80px;
+}
+.mainmenu__list {
+    display: flex;
+    column-gap: 20px;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+.mainmenu__list a:hover{
+    text-decoration: underline;
+}
+.menu__link {
+    text-decoration: none;
+}
+.basket__list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+a{
+    color: #212121;
+}
+ul {
+    list-style: none;
+}
+.knopp{
+    display: flex;
+}
+.knop1{
+    cursor: pointer;
+    width: 100px;
+    height: 35px;    
+    text-decoration: none;
+    margin-top: -5px;
+    font-size: 12px;
+    margin-right: 10px;
+    background-color: rgb(241, 203, 132);
+    color: black;
+    border: none;
+    border-radius: 5px;  
+    transition: all 0.3s ease-in-out ; /*переход будет медленно начинаться и заканчиваться в течении указ времени */
+    
+}
+.knop1:hover,
+.knop1:focus{ 
+    border: none;
+    outline: 2px solid  rgb(223, 221, 218); /*задает доп рамку */
+    transition: all 0.3s ease-in-out ;
+}
+.knop2{
+    cursor: pointer;
+    width: 70px;
+    height: 35px;    
+    text-decoration: none;
+    margin-top: -5px;
+    font-size: 12px;
+    background-color:white;
+    color: black;
+    border-radius: 5px;  
+    transition: all 0.3s ease-in-out ; /*переход будет медленно начинаться и заканчиваться в течении указ времени */
+    
+}
+.knop2:hover,
+.knop2:focus{
+    border: 2px solid rgb(243, 243, 243); 
+    outline: 2px solid  rgb(235, 177, 119); /*задает доп рамку */
+    transition: all 0.2s ease-in-out ;
+}
+
+
+/* -------------content--1--------------- */
+.content--1{
+    display: flex;
+    align-items: center;
+    height: 850px;
+    width: 100%;
+    padding-left: 100px;
+    background-image: url('../img/Rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.container1{
+    padding-left: 100px;
+    position: relative;
+}
+.content1 h2{
+    color: #013A4C;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+}
+.content1 p{
+    color:#013A4C;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+.knoppp{
+    display: flex;
+    column-gap: 10px;
+}
+.knop3{
+    cursor: pointer;
+    width: 140px;
+    height: 40px;    
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #FFD063;
+    color: #013A4C;
+    border: none;
+    border-radius: 5px;  
+    transition: all 0.3s ease-in-out ; /*переход будет медленно начинаться и заканчиваться в течении указ времени */
+    
+}
+.knop3:hover,
+.knop3:focus{ 
+    border: none;
+    outline: 2px solid  rgb(223, 221, 218); /*задает доп рамку */
+    transition: all 0.3s ease-in-out ;
+}
+.knop4{
+    cursor: pointer;
+    width: 140px;
+    height: 40px;    
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #013A4C;
+    color: white;
+    border: none;
+    border-radius: 5px;  
+    transition: all 0.3s ease-in-out ;
+    
+}
+.knop4:hover,
+.knop4:focus{
+    border: 2px solid rgb(243, 243, 243); 
+    outline: 2px solid  rgb(235, 177, 119); /*задает доп рамку */
+    transition: all 0.2s ease-in-out ;
+}
+
+/* -------------content--2--------------- */
+
+.contant--2{
+    background-color: #013A4C;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+.content2 div p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.content2{
+    align-items: center;   
+}
+
+.svg{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    align-items:center;
+}
+.svggg{
+    margin: 10px;
+}
+
+/* -------------content--3--------------- */
+
+.contant--3{
+    background-color: #013A4C;
+    display: flex;
+    align-items: center;
+    height: 630px;
+    width: 100%;
+}
+.content3{
+    display: flex;
+    /* flex-wrap:wrap; */
+    justify-content:space-between;
+}
+.content3 h2{
+    color: #F2DCE4;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+}
+.content3 p{
+    color:#FFFFFF;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+.info{
+    margin-top: 90px;
+}
+.knop5{
+    cursor: pointer;
+    width: 170px;
+    height: 40px;    
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #FFD063;
+    color: #013A4C;
+    border: none;
+    border-radius: 5px;  
+    transition: all 0.3s ease-in-out ; /*переход будет медленно начинаться и заканчиваться в течении указ времени */
+    
+}
+.knop5:hover,
+.knop5:focus{ 
+    border: none;
+    outline: 2px solid  rgb(223, 221, 218); /*задает доп рамку */
+    transition: all 0.3s ease-in-out ;
+}
+
